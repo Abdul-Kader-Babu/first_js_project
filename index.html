@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    height: 2rem;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  
+}
+button {
+    height: 2rem;
+    padding: 1rem;
+    background-color: aqua;
+    color: black;
+    border: .1rem solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    color: rgb(243, 10, 10);
+    cursor: pointer;
+}
+</style>
+<body>
+    <section>
+        <h1 id="heading">Calculator</h1> <br> <br>
+        <div class="input">
+            <input type="number" id="numOne" placeholder="Enter The digit" value="50">
+            <input type="number" id="numTwo" placeholder="Enter The digit" value="50">
+        </div>
+
+        <div class="button">
+            <button id="add" onclick="add()">ADD</button>
+            <button id="subtraction" onclick="subtraction()">SUBTRACTION</button>
+            <button id="multification" onclick="multification()">MULTIFICATION</button>
+            <button id="division" onclick="division()">DIVISION</button>
+        </div>
+        <div class="result">
+            <h2>Result: <span id="Result">0</span></h2>
+        </div>
+    </section>
+   
+    <script src="scrift.js">
+
+    </script>
+</body>
+</html>
